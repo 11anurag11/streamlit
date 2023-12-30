@@ -7,17 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1L0YJ9ORPTcWkTT3alet0UBjzEpsM1J88
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
 
-!pip install streamlit
-
-import streamlit as st
-import pandas as pd
-import plotly.express as px
- #df = pd.read_csv("/content/drive/MyDrive/salesweeklycleaned.csv")
-
-import streamlit as st
 import pandas as pd
 import numpy as np
 from keras.models import Sequential
