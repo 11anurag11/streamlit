@@ -90,16 +90,3 @@ if st.sidebar.button("Predict"):
 
     # Optionally, display evaluation metrics or allow downloads
 
-!pip install pyngrok
-
-from pyngrok import ngrok
-import streamlit as st
-
-# Run Streamlit app in the background
-!streamlit run app.py &
-
-# Create a public URL for the Streamlit app
-public_url = ngrok.connect(port="8501")
-
-# Display the public URL
-st.success(f"Streamlit app is live at: {public_url}")
